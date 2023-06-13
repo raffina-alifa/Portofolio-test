@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+
+    <title>Portofolio I Projek</title>
+  </head>
+  
+  <body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Navbar  -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(237, 255, 136);">
+        <div class="container">
+          <a class="navbar-brand" href="#" style="color: rgb(53, 3, 42); font-family: 'Poppins', sans-serif; font-weight: bolder; font-size: x-large;">Nanaridesu</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto" style="color: rgb(12, 3, 53); font-family: 'Poppins', sans-serif; font-weight: bold; >
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Beranda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Tentangsaya.html">Tentang Saya</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Projek</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Kontak</a>
+              </li>
+  
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- Navbar END -->
+
+    <!-- header -->
+    <h3 class="display-3  white-text mb-0 pt-md-5 pt-5" style="font-family: Poppins, sans-serif; font-weight: bolder; text-align: center;">Projek</h3>
+    <hr class="hr-light my-4 w-75" style="padding: 0.2%; margin: 10%;  color: rgb(221, 9, 210);">
+    <!-- header END -->
+
+    <!-- Kumpulan karya -->
+
+    <style>
+        .gallery {
+          -webkit-column-count: 3;
+          -moz-column-count: 3;
+          column-count: 3;
+          -webkit-column-width: 33%;
+          -moz-column-width: 33%;
+          column-width: 33%; 
+        }
+          .gallery .pics {
+          -webkit-transition: all 350ms ease;
+          transition: all 350ms ease; 
+        }
+          .gallery .animation {
+          -webkit-transform: scale(1);
+          -ms-transform: scale(1);
+          transform: scale(1); 
+        }
+  
+        @media (max-width: 450px) {
+          .gallery {
+            -webkit-column-count: 1;
+            -moz-column-count: 1;
+            column-count: 1;
+            -webkit-column-width: 100%;
+            -moz-column-width: 100%;
+            column-width: 100%;
+          }
+        }
+  
+        @media (max-width: 400px) {
+          .btn.filter {
+            padding-left: 1.1rem;
+            padding-right: 1.1rem;
+          }
+        }
+        button.close {
+          position: absolute;
+          right: 0;
+          z-index: 2;
+          padding-right: 1rem;
+          padding-top: .6rem;
+        }
+      </style>
+     
+     <div class="container my-5">
+
+        <!-- Section -->
+        <section>
+          
+          <style>
+            .gallery {
+              -webkit-column-count: 3;
+              -moz-column-count: 3;
+              column-count: 3;
+              -webkit-column-width: 33%;
+              -moz-column-width: 33%;
+              column-width: 33%; 
+            }
+              .gallery .pics {
+              -webkit-transition: all 350ms ease;
+              transition: all 350ms ease; 
+            }
+              .gallery .animation {
+              -webkit-transform: scale(1);
+              -ms-transform: scale(1);
+              transform: scale(1); 
+            }
+      
+            @media (max-width: 450px) {
+              .gallery {
+                -webkit-column-count: 1;
+                -moz-column-count: 1;
+                column-count: 1;
+                -webkit-column-width: 100%;
+                -moz-column-width: 100%;
+                column-width: 100%;
+              }
+            }
+      
+            @media (max-width: 400px) {
+              .btn.filter {
+                padding-left: 1.1rem;
+                padding-right: 1.1rem;
+              }
+            }
+            button.close {
+              position: absolute;
+              right: 0;
+              z-index: 2;
+              padding-right: 1rem;
+              padding-top: .6rem;
+            }
+          </style>
+          
+          <!-- Modal -->
+              <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                          <div class="modal-body p-0">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                              </button>
+                              
+                              <!-- Grid row -->
+                              <div class="row">
+                              
+                                  <!-- Grid column -->
+                                  <div class="col-md-6 py-5 pl-5">
+                                      
+                                      <h5 class="font-weight-normal mb-3">Paper cup mockup</h5>
+      
+                                      <p class="text-muted">Key letters, explain which writing we he carpeting or fame, the itch expand medical amped through constructing time. And scarfs, gain, get showed accounts decades.</p>
+      
+                                      <ul class="list-unstyled font-small mt-5">
+                                          <li>
+                                              <p class="text-uppercase mb-2"><strong>Client</strong></p>
+                                              <p class="text-muted mb-4">Envato Inc.</p>
+                                          </li>
+      
+                                          <li>
+                                              <p class="text-uppercase mb-2"><strong>Date</strong></p>
+                                              <p class="text-muted mb-4">June 27, 2019</p>
+                                          </li>
+      
+                                          <li>
+                                              <p class="text-uppercase mb-2"><strong>Skills</strong></p>
+                                              <p class="text-muted mb-4">Design, HTML, CSS, Javascript</p>
+                                          </li>
+      
+                                          <li>
+                                              <p class="text-uppercase mb-2"><strong>Address</strong></p>
+                                              <a href="https://mdbootstrap.com/docs/jquery/design-blocks/">MDBootstrap</a>
+                                          </li>
+                                      </ul>
+                                      
+                                  </div>
+                                  <!-- Grid column -->
+                              
+                                  <!-- Grid column -->
+                                  <div class="col-md-6">
+                                      
+                                      <div class="view rounded-right">
+                                          <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Vertical/5.jpg" alt="Sample image">
+                                      </div>
+                                      
+                                  </div>
+                                  <!-- Grid column -->
+                              
+                              </div>
+                              <!-- Grid row -->
+                              
+                          </div>
+                      </div>
+                  </div>
+              </div>
+      
+      
+          <!-- Grid row -->
+          <div class="row">
+      
+            <!-- Grid column -->
+            <div class="col-md-12 dark-grey-text d-flex justify-content-center mb-5">
+      
+              <button type="button" class="btn btn-flat btn-lg m-0 px-3 py-1 filter" data-rel="all">Semua</button>
+              <p class="font-weight-bold mb-0 px-1 py-1">/</p>
+              <button type="button" class="btn btn-flat btn-lg m-0 px-3 py-1 filter" data-rel="1">Digital</button>
+              <p class="font-weight-bold mb-0 px-1 py-1">/</p>
+              <button type="button" class="btn btn-flat btn-lg m-0 px-3 py-1 filter" data-rel="2">Manual</button>
+      
+            </div>
+            <!-- Grid column -->
+      
+          </div>
+          <!-- Grid row -->
+      
+          <!-- Grid row -->
+          <div class="gallery mb-5" id="gallery">
+      
+            <!-- Grid column -->
+            <div class="mb-3 pics all 2 animation">
+              <a data-toggle="modal" data-target="#basicExampleModal">
+                <img class="img-fluid z-depth-1 rounded" src="Images/Snapinsta.app_342870873_269224429014246_5528784728842490667_n_1024.jpg" alt="Card image cap">
+              </a>
+            </div>
+            <!-- Grid column -->
+      
+            <!-- Grid column -->
+            <div class="mb-3 pics animation all 1">
+              <a data-toggle="modal" data-target="#basicExampleModal">
+                <img class="img-fluid z-depth-1 rounded" src="Images/Snapinsta.app_337648758_960132604985576_2071592268016512811_n_1024.jpg" alt="Card image cap">
+              </a>
+            </div>
+            <!-- Grid column -->
+      
+            <!-- Grid column -->
+            <div class="mb-3 pics animation all 1">
+              <a data-toggle="modal" data-target="#basicExampleModal">
+                <img class="img-fluid z-depth-1 rounded" src="Images/Snapinsta.app_324889615_136840805900831_3737613115773300179_n_1024.jpg" alt="Card image cap">
+              </a>
+            </div>
+            <!-- Grid column -->
+      
+            <!-- Grid column -->
+            <div class="mb-3 pics all 2 animation">
+              <a data-toggle="modal" data-target="#basicExampleModal">
+                <img class="img-fluid z-depth-1 rounded" src="Images/Snapinsta.app_323817605_893010935224081_4104790214436979680_n_1024.jpg">
+              </a>
+            </div>
+            <!-- Grid column -->
+      
+            <!-- Grid column -->
+            <div class="mb-3 pics all 2 animation">
+              <a data-toggle="modal" data-target="#basicExampleModal">
+                <img class="img-fluid z-depth-1 rounded" src="Images/Snapinsta.app_322661625_721830695800653_7340386590798429335_n_1024.jpg" alt="Card image cap">
+              </a>
+            </div>
+            <!-- Grid column -->
+      
+            <!-- Grid column -->
+            <div class="mb-3 pics animation all 1">
+              <a data-toggle="modal" data-target="#basicExampleModal">
+                <img class="img-fluid z-depth-1 rounded" src="Images/Snapinsta.app_313936446_123021237245191_8903765947475261518_n_1024.jpg" alt="Card image cap">
+              </a>
+            </div>
+
+            <!-- Grid column -->
+            <div class="mb-3 pics all 2 animation">
+                <a data-toggle="modal" data-target="#basicExampleModal">
+                  <img class="img-fluid z-depth-1 rounded" src="Images/Rin copy.jpg" alt="Card image cap">
+                </a>
+              </div>
+              <!-- Grid column -->
+        
+              <!-- Grid column -->
+              <div class="mb-3 pics animation all 1">
+                <a data-toggle="modal" data-target="#basicExampleModal">
+                  <img class="img-fluid z-depth-1 rounded" src="Images/ilust copy.jpg" alt="Card image cap">
+                </a>
+              </div>
+              <!-- Grid column -->
+        
+              <!-- Grid column -->
+              <div class="mb-3 pics animation all 1">
+                <a data-toggle="modal" data-target="#basicExampleModal">
+                  <img class="img-fluid z-depth-1 rounded" src="Images/26. RAFFINA ALIFA FITRI - MUG.jpg" alt="Card image cap">
+                </a>
+              </div>
+              <!-- Grid column -->
+        
+              <!-- Grid column -->
+              <div class="mb-3 pics all 2 animation">
+                <a data-toggle="modal" data-target="#basicExampleModal">
+                  <img class="img-fluid z-depth-1 rounded" src="Images/Reimu.jpg" alt="Card image cap">
+                </a>
+              </div>
+              <!-- Grid column -->
+        
+              <!-- Grid column -->
+              <div class="mb-3 pics all 2 animation">
+                <a data-toggle="modal" data-target="#basicExampleModal">
+                  <img class="img-fluid z-depth-1 rounded" src="Images/Nina Nino 2 png.jpg" alt="Card image cap">
+                </a>
+              </div>
+              <!-- Grid column -->
+        
+              <!-- Grid column -->
+              <div class="mb-3 pics animation all 1">
+                <a data-toggle="modal" data-target="#basicExampleModal">
+                  <img class="img-fluid z-depth-1 rounded" src="Images/Nina Nino png.jpg" alt="Card image cap">
+                </a>
+              </div>
+
+               <!-- Grid column -->
+               <div class="mb-3 pics all 2 animation">
+                <a data-toggle="modal" data-target="#basicExampleModal">
+                  <img class="img-fluid z-depth-1 rounded" src="Images/WhatsApp Image 2023-06-13 at 01.43.50.jpeg" alt="Card image cap">
+                </a>
+              </div>
+              <!-- Grid column -->
+        
+              <!-- Grid column -->
+              <div class="mb-3 pics all 2 animation">
+                <a data-toggle="modal" data-target="#basicExampleModal">
+                  <img class="img-fluid z-depth-1 rounded" src="Images/WhatsApp Image 2023-06-13 at 01.43.38.jpeg" alt="Card image cap">
+                </a>
+              </div>
+              <!-- Grid column -->
+        
+              <!-- Grid column -->
+              <div class="mb-3 pics animation all 1">
+                <a data-toggle="modal" data-target="#basicExampleModal">
+                  <img class="img-fluid z-depth-1 rounded" src="Images/WhatsApp Image 2023-06-13 at 01.43.35.jpeg" alt="Card image cap">
+                </a>
+              </div>
+
+              <!-- Grid column -->
+              <div class="mb-3 pics all 2 animation">
+                <a data-toggle="modal" data-target="#basicExampleModal">
+                  <img class="img-fluid z-depth-1 rounded" src="Images/Rapunzel.jpeg" alt="Card image cap">
+                </a>
+              </div>
+              <!-- Grid column -->
+        
+              <!-- Grid column -->
+              <div class="mb-3 pics all 2 animation">
+                <a data-toggle="modal" data-target="#basicExampleModal">
+                  <img class="img-fluid z-depth-1 rounded" src="Images/sc010.jpg" alt="Card image cap">
+                </a>
+              </div>
+              <!-- Grid column -->
+        
+              <!-- Grid column -->
+              <div class="mb-3 pics animation all 1">
+                <a data-toggle="modal" data-target="#basicExampleModal">
+                  <img class="img-fluid z-depth-1 rounded" src="Images/sc013.jpg" alt="Card image cap">
+                </a>
+              </div>
+
+              
+            <!-- Grid column -->
+            
+      
+          </div>
+          <!-- Grid row -->
+      
+        </section>
+        <!-- Section -->
+      
+      </div>
+    <!-- Kumpulan karya end -->
+
+
+  </body>
+</html>
